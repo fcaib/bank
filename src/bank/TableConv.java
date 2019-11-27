@@ -29,21 +29,22 @@ public class TableConv {
 		
 	}
 	
+	@SuppressWarnings("unlikely-arg-type")
 	public BigInteger  conv()
 	{
 		char[] s = this.numCptInput.toCharArray();
 		
-		String result ="" ;
+		String result ="" ;	
 		
-		
-		for (int i =0; i<=  this.numCptInput.length() ; i++ ) {
-		/*
-			String v =  
-			//if( ) 
-				result += this.t.get(s[i]);
+		for (int i =0; i<=  this.numCptInput.length()-1 ; i++ ) {
+			
+			
+			if( this.t.get( String.valueOf(s[i])) != null ) 
+			
+				result += this.t.get(String.valueOf(s[i]));
 			else
-				result +=s[i];
-				*/ 
+				result +=String.valueOf(s[i]);
+				
 		}
 		
 		return new BigInteger(result);

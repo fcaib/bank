@@ -27,7 +27,8 @@ public class TableConvTest {
 		String numCpt ="123456789AB";		
 		TableConv  t = new TableConv(numCpt);
 		BigInteger resultOk = new BigInteger( "12345678912");
-		assertEquals(resultOk, t.conv());	
+		BigInteger result =  t.conv();
+		assertEquals(resultOk,result);	
 	}
 
 	@Test()
