@@ -21,6 +21,19 @@ public class NumEtablissement implements ICheckCompte {
 		
 		return test;
 	}
+
+	public NumEtablissement(String numEtab) {
+		this.numEtab = numEtab;
+	}
+
+	public String getNumEtab() {
+		return numEtab;
+	}
+
+	public void setNumEtab(String numEtab) {
+		this.numEtab = numEtab;
+	}
+	
 	
 
 }

@@ -21,6 +21,18 @@ public class NumGuichet implements ICheckCompte{
 		return test;
 	}
 
+	public NumGuichet(String numGuichet) {
+		this.numGuichet = numGuichet;
+	}
+
+	public String getNumGuichet() {
+		return numGuichet;
+	}
+
+	public void setNumGuichet(String numGuichet) {
+		this.numGuichet = numGuichet;
+	}
+
 	
 
 }
