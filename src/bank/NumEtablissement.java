@@ -8,16 +8,13 @@ public class NumEtablissement implements ICheckCompte {
 	@Override
 	public boolean check() {
 		
-		boolean test=true;
-		int i=0;
+		boolean test=false;
+
 		// Test caractères ne sont que des chiffres
-		while ( (i<this.numEtab.length() ) && (test==true) )
-		{
-			if (this.numEtab.substring(i).matches("[0-9]"))	{test=false;}
-			i++;
-		}
+		if (this.numEtab.matches("^[0-9]{5}$") ) test=true;
+		
 		// Test longueur 5
-		if (this.numEtab.length() != 5 ) { test = false;}
+		//if (this.numEtab.length() != 5 ) test = false;
 		
 		return test;
 	}
