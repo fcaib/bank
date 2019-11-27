@@ -24,14 +24,8 @@ public class NumCompte implements  ICheckCompte {
 
 
 
-	public BigInteger getNumCpt() {
-		return numCpt;
-	}
-
-
-
-	public void setNumCpt(BigInteger numCpt) {
-		this.numCpt = numCpt;
+	public String  getNumCpt() {
+		return numCpt.toString();
 	}
 
 	
