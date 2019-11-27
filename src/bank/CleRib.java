@@ -1,14 +1,12 @@
 package bank;
 
-public class CleRib {
+public class CleRib implements  ICheckCompte  {
 	/*
 	 * Vérification
 	 * 
 	 */
-	public Boolean Check()
-	{
-		Boolean resultOk = false;
-		
-		return resultOk;
+	public boolean check() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

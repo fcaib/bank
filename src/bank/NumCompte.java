@@ -1,12 +1,12 @@
 package bank;
 
-public class NumCompte {
+public class NumCompte implements  ICheckCompte {
 
 	/*
 	 * Vérification
 	 * 
 	 */
-	public Boolean check()
+	public boolean check()
 	{
 		Boolean resultOk = false;
 		
